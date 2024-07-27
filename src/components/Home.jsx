@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(() => {
     fetchVehicles();
-  }, [user]);
+  }, []);
 
   const fetchVehicles = () => {
     fetch('https://fleet-api1.onrender.com/vehicles')
@@ -75,8 +75,8 @@ function Home() {
                     {vehicles.map((vehicle, index) => (
                       <tr key={index}>
                        
-                        <td>{vehicle.model}</td>
                         <td>{vehicle.vin}</td>
+                        <td>{vehicle.make}</td>
                       </tr>
                     ))}
                   </tbody>}
