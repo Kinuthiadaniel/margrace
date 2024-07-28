@@ -28,7 +28,7 @@ const Login = () => {
             password: '',
         },
         validationSchema: formSchema,
-        onSubmit: (values) => {
+        onSubmit: async (values) => {
             try {
                  fetch('https://fleet-api1.onrender.com/login', {
                     method: 'POST',

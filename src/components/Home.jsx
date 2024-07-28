@@ -25,7 +25,7 @@ function Home() {
           make: vehicle.make
         
         }));
-        if (user) {setVehicles(formattedData);}
+      setVehicles(formattedData);
         
       })
       .catch(error => console.error('Error fetching Vehicle:', error));
@@ -41,7 +41,7 @@ function Home() {
         <div className="row">
           <div className="col-3 border shadow-sm">
             <div className="d-flex flex-column">
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/home')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace')}>
                 Home
               </button>
               <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/trips')}>
@@ -50,7 +50,7 @@ function Home() {
               <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/vehicles')}>
                 Vehicles
               </button>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/register')}>
                 Profile
               </button>
             </div>
