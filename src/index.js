@@ -18,7 +18,7 @@ const router = createBrowserRouter([
      element:<App />, 
      children:[
       {
-        path: 'margrace/register',
+        path: '/margrace/register',
         element: <Register />
       },
       {
@@ -26,15 +26,15 @@ const router = createBrowserRouter([
         element: <Login />
       },
       {
-        path:'margrace/home',
+        path:'/margrace/home',
          element:<Home /> 
        },
        {
-        path:'margrace/trips',
+        path:'/margrace/trips',
          element:<Trip /> 
        },
        {
-        path:'margrace/vehicles',
+        path:'/margrace/vehicles',
          element:<Vehicle /> 
        }
      ] 

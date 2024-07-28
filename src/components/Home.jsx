@@ -40,20 +40,20 @@ function Home() {
       <section className="container">
         <div className="row">
           <div className="col-3 border shadow-sm">
-            {/* <div className="d-flex flex-column">
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/home')}>
+            <div className="d-flex flex-column">
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/home')}>
                 Home
               </button>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/trips')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/trips')}>
                 Trips
               </button>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/vehicles')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/vehicles')}>
                 Vehicles
               </button>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/')}>
                 Profile
               </button>
-            </div> */}
+            </div>
           </div>
           <div className="col-9">
            {user && <h2 className="p-3 mb-2 bg-warning-subtle text-warning-emphasis">
