@@ -29,9 +29,9 @@ function NavBar () {
                 <button className="btn btn-outline-success " type="button " onClick={() => navigate('/margrace/trips')}>
                   Trips
                 </button>
-                <button className="btn btn-outline-success" type="button" onClick={() => navigate('/margrace/maintenances')}>
+                {/* <button className="btn btn-outline-success" type="button" onClick={() => navigate('/margrace/maintenances')}>
                   Maintenances
-                </button>
+                </button> */}
                 <button className="btn btn-outline-success " type="button " onClick= {handleLogOut}>
                   LOGOUT
                 </button>
