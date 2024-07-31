@@ -14,27 +14,27 @@ import Vehicle from './components/Vehicle'
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path:'/margrace.vercel.app',
      element:<App />, 
      children:[
       {
-        path: '/register',
+        path: 'margrace.vercel.app/register',
         element: <Register />
       },
       {
-        path: '/',
+        path: '/margrace.vercel.app/',
         element: <Login />
       },
       {
-        path:'/home',
+        path:'/margrace.vercel.app/home',
          element:<Home /> 
        },
        {
-        path:'/trips',
+        path:'/margrace.vercel.app/trips',
          element:<Trip /> 
        },
        {
-        path:'/vehicles',
+        path:'/margrace.vercel.app/vehicles',
          element:<Vehicle /> 
        }
      ] 

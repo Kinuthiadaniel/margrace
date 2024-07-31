@@ -41,7 +41,7 @@ const Login = () => {
                   .then(data => {
                   localStorage.setItem('access_token', data.access_token)
                   setUser(data.user)
-                  }).then( navigate('/margrace/home'))
+                  }).then( navigate('/margrace.vercel.app/home'))
                     
 
 
@@ -94,7 +94,7 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
             <div className="register-link">
-                <p>Don't have an account? <a onClick={() => navigate("/register")}>Register</a></p>
+                <p>Don't have an account? <a onClick={() => navigate("/margrace.vercel.app/register")}>Register</a></p>
             </div>
         </div>
     );
