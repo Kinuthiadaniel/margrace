@@ -52,7 +52,7 @@ const Register = () => {
                   .then(data => {
                   localStorage.setItem('access_token', data.access_token)
                   setUser(data.user)
-                  }).then( navigate('/margrace'))
+                  }).then( navigate('/'))
                     
 
                   
@@ -73,7 +73,7 @@ const Register = () => {
     <div className="form-container">
       <div className="form-wrapper">
         <h2>Hello, Create account</h2>
-        <div><p>Already have an account? <a onClick={() => navigate('/margrace')} >Login</a></p> </div>
+        <div><p>Already have an account? <a onClick={() => navigate('/')} >Login</a></p> </div>
         <form onSubmit={formik.handleSubmit} style={{ margin: "30px" }}>
           <label htmlFor="email">Email Address</label>
           <br />

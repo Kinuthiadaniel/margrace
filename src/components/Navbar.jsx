@@ -20,13 +20,13 @@ function NavBar () {
             <div className=" container-fluid ">
               <a className="navbar-brand" >MARGRACE SERVICES LTD</a>
               <form className='d-flex'>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/home')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('home')}>
                 Home
               </button>
-                <button className="btn btn-outline-success" type="button" onClick={() => navigate('/margrace/vehicles')}>
+                <button className="btn btn-outline-success" type="button" onClick={() => navigate('/vehicles')}>
                   Vehicles
                 </button>
-                <button className="btn btn-outline-success " type="button " onClick={() => navigate('/margrace/trips')}>
+                <button className="btn btn-outline-success " type="button " onClick={() => navigate('/trips')}>
                   Trips
                 </button>
                 {/* <button className="btn btn-outline-success" type="button" onClick={() => navigate('/margrace/maintenances')}>

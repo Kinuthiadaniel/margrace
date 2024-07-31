@@ -14,27 +14,27 @@ import Vehicle from './components/Vehicle'
 
 const router = createBrowserRouter([
   {
-    path:'/margrace',
+    path:'/',
      element:<App />, 
      children:[
       {
-        path: '/margrace/register',
+        path: '/register',
         element: <Register />
       },
       {
-        path: '/margrace/',
+        path: '/',
         element: <Login />
       },
       {
-        path:'/margrace/home',
+        path:'/home',
          element:<Home /> 
        },
        {
-        path:'/margrace/trips',
+        path:'/trips',
          element:<Trip /> 
        },
        {
-        path:'/margrace/vehicles',
+        path:'/vehicles',
          element:<Vehicle /> 
        }
      ] 
