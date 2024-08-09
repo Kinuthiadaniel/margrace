@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/margrace/static/css/main.9c7eacd0.css",
-    "main.js": "/margrace/static/js/main.fa93534f.js",
-    "static/js/453.347fc889.chunk.js": "/margrace/static/js/453.347fc889.chunk.js",
-    "index.html": "/margrace/index.html",
-    "main.9c7eacd0.css.map": "/margrace/static/css/main.9c7eacd0.css.map",
-    "main.fa93534f.js.map": "/margrace/static/js/main.fa93534f.js.map",
-    "453.347fc889.chunk.js.map": "/margrace/static/js/453.347fc889.chunk.js.map"
+    "main.css": "/static/css/main.9c7eacd0.css",
+    "main.js": "/static/js/main.2a9ad839.js",
+    "static/js/453.347fc889.chunk.js": "/static/js/453.347fc889.chunk.js",
+    "index.html": "/index.html",
+    "main.9c7eacd0.css.map": "/static/css/main.9c7eacd0.css.map",
+    "main.2a9ad839.js.map": "/static/js/main.2a9ad839.js.map",
+    "453.347fc889.chunk.js.map": "/static/js/453.347fc889.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c7eacd0.css",
-    "static/js/main.fa93534f.js"
+    "static/js/main.2a9ad839.js"
   ]
 }
