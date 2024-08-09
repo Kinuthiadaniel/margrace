@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/margrace/static/css/main.cc9be920.css",
-    "main.js": "/margrace/static/js/main.3f052d42.js",
+    "main.css": "/margrace/static/css/main.1329fb04.css",
+    "main.js": "/margrace/static/js/main.2087946a.js",
     "static/js/453.347fc889.chunk.js": "/margrace/static/js/453.347fc889.chunk.js",
     "index.html": "/margrace/index.html",
-    "main.cc9be920.css.map": "/margrace/static/css/main.cc9be920.css.map",
-    "main.3f052d42.js.map": "/margrace/static/js/main.3f052d42.js.map",
+    "main.1329fb04.css.map": "/margrace/static/css/main.1329fb04.css.map",
+    "main.2087946a.js.map": "/margrace/static/js/main.2087946a.js.map",
     "453.347fc889.chunk.js.map": "/margrace/static/js/453.347fc889.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc9be920.css",
-    "static/js/main.3f052d42.js"
+    "static/css/main.1329fb04.css",
+    "static/js/main.2087946a.js"
   ]
 }
