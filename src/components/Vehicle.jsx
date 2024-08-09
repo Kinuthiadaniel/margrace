@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import NavBar from './Navbar';
-import { useOutletContext } from 'react-router-dom';
+
+// import { useOutletContext } from 'react-router-dom';
 
 const Vehicle = () => {
 
-  const [user, setUser] = useOutletContext()
+  const [user, setUser] = useState("")
  
   const [vin, setVin] = useState('');
   const [make, setMake] = useState('');
@@ -85,7 +85,7 @@ const Vehicle = () => {
 
   return (
     <div className='body'>
-      <NavBar />
+
 
       <div className="table-container">
         <form onSubmit={(e) => { e.preventDefault(); addVehicle(); }} className="budget-form">

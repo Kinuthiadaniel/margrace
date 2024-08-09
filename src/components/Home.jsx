@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "./Navbar";
 import { useOutletContext } from "react-router-dom";
+import {SERVER_URL} from '../constant'
 
 function Home() {
 
-  const [user, setUser] = useOutletContext()
+  const [user, setUser] = useState("")
 
   const navigate = useNavigate();
   const [vehicles, setVehicles] = useState([]);
@@ -15,7 +16,7 @@ function Home() {
   }, []);
 
   const fetchVehicles = () => {
-    fetch('https://fleet-api1.onrender.com/vehicles')
+    fetch(`${SERVER_URL}/vehicles`)
       .then(response => response.json())
       .then(data => {
         const userdata = data.filter(item => user.id === item.user_id)
@@ -34,23 +35,23 @@ function Home() {
 
   return (
     <section>
-      <NavBar />
+ 
       <br />
       <br />
-      <section className="container">
-        <div className="row">
-          <div className="col-3 border shadow-sm">
-            <div className="d-flex flex-column">
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace')}>
+      <section className="relative w-full">
+        <div className="relative bg-gradient-to-t from-blue-100 to-blue-400">
+          <div className="container m-auto px-6 pt-32 md:px-12 lg:pt-[4.8rem] lg:px-7">
+            <div className="w-full md:w-auto flex-col md:flex-row items-center justify-center">
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/')}>
                 Home
               </button>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/trips')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/trips')}>
                 Trips
               </button>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/vehicles')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/vehicles')}>
                 Vehicles
               </button>
-              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/margrace/register')}>
+              <button className="btn btn-warning m-3" type="button" onClick={() => navigate('/register')}>
                 Profile
               </button>
             </div>

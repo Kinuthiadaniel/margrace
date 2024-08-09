@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import NavBar from "./Navbar";
-import { useOutletContext } from "react-router-dom";
+
+// import { useOutletContext } from "react-router-dom";
 
 const TripSchema = Yup.object().shape({
     user_id: Yup.number().required("User id is required"),
@@ -13,7 +13,7 @@ const TripSchema = Yup.object().shape({
 });
 
 const Trip = () => {
-    const [user, setUser] = useOutletContext();
+    // const [user, setUser] = useState("");
 
     const [trips, setTrips] = useState([]);
     const [editingItem, setEditingItem] = useState(null);
@@ -138,7 +138,7 @@ const Trip = () => {
                 </div>
             ))}
 
-            <NavBar />
+          
             <div className="expense-tracker">
                 <Formik
                     initialValues={{
