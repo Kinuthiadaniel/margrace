@@ -21,7 +21,7 @@ import { useEffect } from 'react';
 
 function MainLayout() {
   return (
-    <div>
+    <div className=''>
       <NavBar />
       <Outlet />
       <Footer />
